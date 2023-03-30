@@ -1,0 +1,745 @@
+/* global rules  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #f2f3f7;
+}
+
+:root {
+    --main-color: #2b3eb1;
+    --danger-color: #AC3E31;
+    --gray: #85899f;
+}
+
+@media (min-width: 1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1700px;
+    }
+}
+
+/* global rules  */
+
+/* navbar*/
+nav {
+    background-color: var(--main-color);
+    padding: 20px 0;
+}
+
+nav a {
+    color: #fff;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+nav .main-links {
+    margin-left: 146px;
+    margin-bottom: 0;
+    gap: 61px;
+}
+
+nav .main-links li a {
+    font-size: 17px;
+    font-weight: 400;
+    transition: all .1s;
+}
+
+nav .main-links li a:hover,
+nav .main-links li.active a {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+nav .main-links li a::before {
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+nav .profile {
+    margin: 0 65px;
+}
+
+.dropdown .hidden-arrow:after {
+    display: none;
+}
+
+.dropdown a i {
+    cursor: pointer;
+}
+
+/* navbar*/
+
+/*main-content*/
+
+section.main-content {
+    padding: 55px 0;
+}
+
+/*announcement*/
+section.main-content .announcement {
+    padding: 42px 48px 41px;
+    background: url(../images/stocks.jpg) no-repeat center;
+    background-size: cover;
+    border-radius: 15px;
+    position: relative;
+}
+
+section.main-content .announcement .carousel-item span {
+    color: #2b3eb1;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 10px 15px;
+
+    background-color: #fff;
+    display: inline-block;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+section.main-content .announcement .carousel-item h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 21px;
+}
+
+section.main-content .announcement .carousel-item .read-more {
+    color: #fc7100;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+section.main-content .announcement .carousel-item .read-more i {
+    font-size: 16px;
+    margin-left: 5px;
+    transition: all .3s ease;
+}
+
+section.main-content .announcement .carousel-item .read-more:hover i {
+    margin-left: 8px;
+}
+
+section.main-content .announcement .carousel.slide {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+section.main-content .announcement .carousel-indicators {
+    margin: 0;
+    margin-top: 25px;
+    position: static;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+section.main-content .announcement .carousel-indicators [data-bs-target] {
+    width: 11px;
+    border-radius: 50%;
+    height: 11px;
+    opacity: 1;
+    margin: 0;
+}
+
+section.main-content .announcement .carousel-indicators [data-bs-target].active {
+    background-color: #fc7100;
+    width: 15px;
+    height: 15px;
+}
+
+section.main-content .announcement::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #2b3eb1;
+    left: 0;
+    top: 0;
+    border-radius: 15px;
+    opacity: .5;
+}
+
+/*announcement*/
+/*main-account*/
+section.main-content .main-account {
+    padding: 47px 33px 43px 48px;
+    background-color: #fff;
+    border-radius: 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+section.main-content .main-account .head-cont {
+    margin-bottom: 35px;
+}
+
+section.main-content .main-account .head-cont span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #85899f;
+}
+
+section.main-content .main-account .acc-funds h3.acc {
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+section.main-content .main-account .acc-funds span {
+    font-size: 19px;
+    font-weight: 400;
+    color: #85899f;
+}
+
+section.main-content .main-account .acc-funds .amount h3 {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+section.main-content .main-account .acc-funds .amount h3 span {
+    color: #212529;
+    font-size: 31px;
+    font-weight: 600;
+}
+
+section.main-content .main-account .acc-funds .amount .dollar-icon {
+    color: #85899f;
+    font-size: 31px;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+section.main-content .main-account .stats {
+    flex-grow: 1;
+}
+
+section.main-content .main-account .stats .expense-item>span {
+    display: flex;
+    width: 54px;
+    height: 54px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+section.main-content .main-account .stats .expense-item h4 {
+    font-size: 28px;
+    font-weight: 500;
+
+}
+
+section.main-content .main-account .stats .expense-item span.type {
+    font-size: 17px;
+    font-weight: 400;
+    color: #85899f;
+
+}
+
+section.main-content .main-account .stats .expense-item.income>span {
+    background-color: rgba(43, 62, 177, .2);
+}
+
+section.main-content .main-account .stats .expense-item.income>span i {
+    font-size: 24px;
+    color: #2b3eb1;
+}
+
+section.main-content .main-account .stats .expense-item.expense>span {
+    background-color: rgba(252, 113, 0, .2);
+    margin-left: 44px;
+}
+
+section.main-content .main-account .stats .expense-item.expense>span i {
+    font-size: 24px;
+    color: #fd933c;
+}
+
+section.main-content .main-account .stats .btn-transfer {
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 15px;
+}
+
+/*main-account*/
+
+/*card-item*/
+section.main-content .card-item {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 24px 33px 26px 48px;
+}
+
+section.main-content .card-item .card-head {
+    margin-bottom: 30px;
+}
+
+section.main-content .card-item .card-head span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #35bb84;
+}
+
+section.main-content .card-item .card-head span i {
+    color: #fff;
+}
+
+section.main-content .card-item .card-head .card-type {
+    color: var(--main-color);
+    font-size: 23px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+section.main-content .card-item .card-no p {
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--main-color);
+    margin-bottom: 30px;
+}
+
+section.main-content .card-item .card-dets label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #85899f;
+}
+
+section.main-content .card-item.selected {
+    background-color: #172b9f;
+    overflow: hidden;
+    position: relative;
+}
+
+section.main-content .card-item.selected * {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+section.main-content .card-item.selected::before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 55%;
+    height: 100%;
+    clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+    background-color: #1a31c0;
+}
+
+section.main-content .card-item.selected .card-type,
+section.main-content .card-item.selected .card-no p {
+    color: #fff;
+}
+
+/*card-item*/
+section.main-content .cashflow {
+    padding: 38px 48px 30px 48px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+section.main-content .cashflow .head {
+    margin-bottom: 35px;
+}
+
+section.main-content .cashflow .head span {
+    font-size: 22px;
+}
+
+section.main-content .cashflow .head a {
+
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 20px;
+}
+
+section.main-content .cashflow .periods {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #f5f7f9;
+    margin-bottom: 35px;
+}
+
+section.main-content .cashflow .periods label {
+    color: var(--gray);
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+section.main-content .cashflow .periods .amount {
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+section.main-content .cashflow .periods .amount span:first-child {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+section.main-content .cashflow .periods .amount span.dollar {
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+section.main-content .cashflow #expenseChart {
+    border-radius: 50%;
+    box-shadow: 0px 0px 36px -3px rgba(0, 0, 0, 0.1);
+}
+
+section.main-content .cashflow .expense-chart-cont {
+    position: relative;
+}
+
+section.main-content .cashflow .expense-chart-cont .chart-data {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section.main-content .cashflow .chart-label {
+    border-radius: 15px;
+    padding: 12px 13px 16px 16px;
+}
+
+section.main-content .cashflow .chart-label.income {
+    background-color: rgba(43, 62, 177, .1);
+    margin-bottom: 50px;
+
+}
+
+section.main-content .cashflow .chart-label>span {
+    margin-right: 15px;
+}
+
+section.main-content .cashflow .chart-label.income>span i {
+    font-size: 24px;
+    color: var(--main-color);
+}
+
+section.main-content .cashflow .chart-label.income .text-cont h4 {
+    color: var(--main-color);
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+section.main-content .cashflow .chart-label.income .text-cont span {
+    color: var(--main-color);
+    font-size: 17px;
+    font-weight: 400;
+}
+
+section.main-content .cashflow .chart-label.expense {
+    background-color: rgba(252, 113, 0, .2);
+
+
+}
+
+section.main-content .cashflow .chart-label.expense .text-cont span {
+    color: #fc7100;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+section.main-content .cashflow .chart-label.expense>span i {
+    font-size: 24px;
+    color: #fc7100;
+}
+
+section.main-content .cashflow .chart-label.expense .text-cont h4 {
+    color: #fc7100;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+section.main-content .cashflow .chart-label.expense .text-cont span {
+    color: #fc7100;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+/*transactions*/
+section.main-content .transactions {
+    padding: 38px 48px 30px 48px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+section.main-content .transactions .head {
+    margin-bottom: 35px;
+}
+
+section.main-content .transactions .head span {
+    font-size: 22px;
+}
+
+section.main-content .transactions .head a {
+
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 20px;
+}
+
+section.main-content .transactions table {
+    width: 100%;
+}
+
+section.main-content .transactions table tr td:first-child {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+section.main-content .transactions table tr td:nth-child(2),
+section.main-content .transactions table tr td:nth-child(3) {
+    font-size: 15px;
+    color: #272727;
+    font-weight: 400;
+}
+
+section.main-content .transactions table tr td:nth-child(4) {
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+}
+
+section.main-content .transactions table tr td:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+
+}
+
+section.main-content .transactions table tr.expense td:nth-child(4) {
+    color: #fc7100;
+    padding-left: 29px;
+}
+
+section.main-content .transactions table tr.expense td:nth-child(4):before {
+    background-color: #fc7100;
+}
+
+section.main-content .transactions table tr.income td:nth-child(4) {
+    color: var(--main-color);
+    padding-left: 29px;
+}
+
+section.main-content .transactions table tr.income td:nth-child(4):before {
+    background-color: var(--main-color);
+}
+
+section.main-content .transactions table tr td:nth-child(5) {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+section.main-content .transactions table tr.income td:nth-child(5) {
+    color: var(--main-color);
+}
+
+section.main-content .transactions table tr.expense td:nth-child(5) {
+    color: #fc7100;
+}
+
+section.main-content .transactions table tr td {
+    padding: 10px 0;
+    border-bottom: 2px solid #f5f7f9;
+}
+
+section.main-content .transactions table tr:last-child td {
+    border: none;
+}
+
+section.main-content .transactions .btn-cont a {
+    background-color: var(--main-color);
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+/*transactions*/
+/*main-content*/
+
+.hidden-md {
+    display: none;
+}
+
+#hidemenu {
+    display: none;
+}
+
+/* Responsive */
+@media screen and (max-width:768px) {
+    .nav-wrapper {
+        overflow: hidden;
+    }
+
+    .hidden-xs {
+        display: none !important;
+    }
+
+    .mobile-menu {
+        flex-direction: column;
+        position: absolute;
+        background-color: #fff;
+        top: 90px;
+        z-index: 99;
+        right: 0;
+        opacity: 0;
+        width: 250px !important;
+        padding: 30px 40px;
+        align-items: flex-end !important;
+        transition: all .3s ease-in-out;
+        gap: 15px;
+    }
+
+    .mobile-menu * {
+        color: #212529;
+    }
+
+    nav {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    nav .main-links {
+        flex-direction: column;
+        margin-left: 0;
+        gap: 15px;
+    }
+
+    .navbar-right {
+        margin: 0 !important;
+        flex-direction: column;
+        align-items: flex-end !important;
+        gap: 15px;
+    }
+
+    nav .profile {
+        margin: 0;
+    }
+
+    .hidden-md {
+        display: block;
+    }
+
+    nav.menu-opened .mobile-menu {
+        opacity: 1;
+    }
+
+    #hidemenu ,#showMenu{
+        cursor: pointer;
+    }
+    nav.menu-opened #showMenu {
+        display: none;
+    }
+
+    nav.menu-opened #hidemenu {
+        display: block;
+    }
+
+
+    section.main-content .main-account .stats {
+        flex-direction: column;
+    }
+
+    section.main-content .main-account .stats .expense-item h4 {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    section.main-content .main-account .acc-funds {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    section.main-content .announcement {
+        margin-bottom: 30px;
+    }
+
+    section.main-content .card-item {
+        margin-bottom: 30px;
+    }
+
+    section.main-content .transactions {
+        margin-top: 30px;
+        height: auto !important;
+    }
+
+    section.main-content .cashflow .chart-label.income {
+        margin: 30px 0 40px;
+    }
+
+    section.main-content .announcement,
+    section.main-content .main-account,
+    section.main-content .card-item,
+    section.main-content .transactions {
+        padding: 25px 15px;
+    }
+
+    section.main-content .main-account .stats .btn-transfer {
+        margin-top: 20px;
+    }
+
+    section.main-content .card-dets span {
+        display: block;
+    }
+
+    section.main-content .table-wrapper {
+        overflow-x: auto;
+    }
+    section.main-content .transactions table tr td{
+        white-space: nowrap !important;
+        padding: 5px 20px;
+    }
+}
+
+/* Responsive */

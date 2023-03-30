@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <nav id="mainNav">
+        <div class="container">
+            <div class="nav-wrapper d-flex align-items-center">
+                <div class="logo">
+                    <a href=""><img src="images/logo.webp" alt=""></a>
+                </div>
+                <div class="ms-auto text-white hidden-md">
+                   <span id="showMenu"> <i class="fas fa-bars fa-2x"></i></span>
+                   <span id="hidemenu"> <i class="fas fa-times fa-2x"></i></span>
+                </div>
+                <div class="d-flex align-items-center justify-content-between w-100 mobile-menu">
+                   
+                    <ul class="main-links list-unstyled  d-flex align-items-center">
+                        <li class="active"><a href="" title="Dashboard">Dashboard</a></li>
+                        <li><a href="" title="Wallet">Wallet</a></li>
+                        <li><a href="" title="Transactions">Transactions</a></li>
+                        <li><a href="" title="Profile">Profile</a></li>
+                    </ul>
+                    <div class="navbar-right d-flex align-items-center ms-auto">
+                        <div class="d-flex align-items-center dropdowns hidden-xs">
+                            <div class="dropdown">
+                                <a class="me-3 dropdown-toggle hidden-arrow" id="notification-drop"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-cog"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="notification-drop">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <a class="me-3 dropdown-toggle hidden-arrow" id="message-drop" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="message-drop">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <a class="me-3 dropdown-toggle hidden-arrow" id="notification-drop"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-bell"></i>
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="notification-drop">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a class="profile" href="">Niazy Eladawy</a>
+                        <a href="" class="logout"><i class="fas fa-sign-out-alt"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="announcement">
+                        <div id="carouselExampleIndicators" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <span>Announcement</span>
+                                    <h3>The world's second largest economy is still struggling to recover from the
+                                        pandemic</h3>
+                                    <a href="" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                                <div class="carousel-item">
+                                    <span>Announcement</span>
+                                    <h3>The world's second largest economy is still struggling to recover from the
+                                        pandemic</h3>
+                                    <a href="" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                                <div class="carousel-item">
+                                    <span>Announcement</span>
+                                    <h3>The world's second largest economy is still struggling to recover from the
+                                        pandemic</h3>
+                                    <a href="" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="main-account">
+                        <div class="d-flex justify-content-between align-items-center head-cont">
+                            <span>Main Account</span>
+                            <span>Available Funds</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center acc-funds">
+                            <div>
+                                <h3 class="acc">First Savings Account</h3>
+                                <span>**** **** **** <span>1234</span></span>
+                            </div>
+                            <div class="amount">
+                                <h3>68.789,<span>56</span><span class="dollar-icon">$</span></h3>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center stats">
+                            <div class="expenses d-flex align-content-center">
+                                <div class="expense-item d-flex align-items-center income">
+                                    <span><i class="fas fa-arrow-down"></i></span>
+                                    <div>
+                                        <h4>3.256,29 $</h4>
+                                        <span class="type">Income</span>
+                                    </div>
+                                </div>
+                                <div class="expense-item d-flex align-items-center expense">
+                                    <span><i class="fas fa-arrow-up"></i></span>
+                                    <div>
+                                        <h4>3.256,29 $</h4>
+                                        <span class="type">Income</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="" class="btn-transfer">Transfer Money</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row mt-4 row-gap-md-4">
+                <div class="col-lg-6 col-xl-3">
+                    <div class="card-item selected">
+                        <div class="d-flex justify-content-between align-items-center card-head">
+                            <span><i class="fas fa-check"></i></span>
+                            <label class="card-type">Card</label>
+                        </div>
+                        <div class="card-no">
+                            <p>**** **** **** 1234</p>
+                        </div>
+                        <div class="card-dets d-flex align-items-center justify-content-between">
+                            <div class="card-avail">
+                                <label>Available funds</label>
+                                <span>68.789,56 $</span>
+                            </div>
+                            <div class="card-expire">
+                                <label>EXPIRES</label>
+                                <span>12/34</span>
+                            </div>
+                            <div class="card-avail">
+                                <label>CVV</label>
+                                <span>123</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3">
+                    <div class="card-item">
+                        <div class="d-flex justify-content-between align-items-center card-head">
+                            <span><i class="fas fa-check"></i></span>
+                            <label class="card-type">Card</label>
+                        </div>
+                        <div class="card-no">
+                            <p>**** **** **** 1234</p>
+                        </div>
+                        <div class="card-dets d-flex align-items-center justify-content-between">
+                            <div class="card-avail">
+                                <label>Available funds</label>
+                                <span>68.789,56 $</span>
+                            </div>
+                            <div class="card-expire">
+                                <label>EXPIRES</label>
+                                <span>12/34</span>
+                            </div>
+                            <div class="card-avail">
+                                <label>CVV</label>
+                                <span>123</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3">
+                    <div class="card-item">
+                        <div class="d-flex justify-content-between align-items-center card-head">
+                            <span><i class="fas fa-check"></i></span>
+                            <label class="card-type">Card</label>
+                        </div>
+                        <div class="card-no">
+                            <p>**** **** **** 1234</p>
+                        </div>
+                        <div class="card-dets d-flex align-items-center justify-content-between">
+                            <div class="card-avail">
+                                <label>Available funds</label>
+                                <span>68.789,56 $</span>
+                            </div>
+                            <div class="card-expire">
+                                <label>EXPIRES</label>
+                                <span>12/34</span>
+                            </div>
+                            <div class="card-avail">
+                                <label>CVV</label>
+                                <span>123</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3">
+                    <div class="card-item">
+                        <div class="d-flex justify-content-between align-items-center card-head">
+                            <span><i class="fas fa-check"></i></span>
+                            <label class="card-type">Card</label>
+                        </div>
+                        <div class="card-no">
+                            <p>**** **** **** 1234</p>
+                        </div>
+                        <div class="card-dets d-flex align-items-center justify-content-between">
+                            <div class="card-avail">
+                                <label>Available funds</label>
+                                <span>68.789,56 $</span>
+                            </div>
+                            <div class="card-expire">
+                                <label>EXPIRES</label>
+                                <span>12/34</span>
+                            </div>
+                            <div class="card-avail">
+                                <label>CVV</label>
+                                <span>123</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-5">
+                    <div class="cashflow h-100">
+                        <div class="head d-flex justify-content-between align-items-center">
+                            <span>Cashflow</span>
+                            <a href="" class="d-flex justify-content-center align-items-center"><i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="row periods">
+                            <div class="col-md-4">
+                                <div>
+                                    <label>Daily</label>
+                                    <p class="amount">285,<span>39</span> <span class="dollar">$</span></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div>
+                                    <label>Weekly</label>
+                                    <p class="amount">985,<span>39</span> <span class="dollar">$</span></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div>
+                                    <label>monthly</label>
+                                    <p class="amount">2850,<span>39</span> <span class="dollar">$</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chart">
+                            <select class="form-select mb-3 w-auto border-0" aria-label="Default select example"
+                                id="filter-expenses">
+                                <option value="Month" selected>Last Month</option>
+                                <option value="Year">Last Year</option>
+                            </select>
+                            <div class="row align-items-center">
+                                <div class="col-md-7">
+                                    <div class="expense-chart-cont">
+                                        <canvas id="expenseChart"></canvas>
+                                        <div class="chart-data">
+                                            <span>Total Cashflow</span>
+                                            <h2 id="total-cash">7.400 $</h2>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="chart-label income d-flex align-items-center">
+                                        <span><i class="fas fa-arrow-down"></i></span>
+                                        <div class="text-cont">
+                                            <h4 id="incomeTotal">4.441,20 $</h4>
+                                            <span class="type">Income</span>
+                                        </div>
+                                    </div>
+                                    <div class="chart-label expense d-flex align-items-center">
+                                        <span><i class="fas fa-arrow-up"></i></span>
+                                        <div class="text-cont">
+                                            <h4 id="expenseTotal">4.441,20 $</h4>
+                                            <span class="type">Expense</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="transactions h-100">
+                        <div class="head d-flex justify-content-between align-items-center">
+                            <span>Latest transactions</span>
+                            <a href="" class="d-flex justify-content-center align-items-center"><i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="table-wrapper">
+                            <table>
+                                <tbody>
+                                    <tr class="expense">
+                                        <td>today</td>
+                                        <td>Fashion</td>
+                                        <td>Card payment</td>
+                                        <td>Clothes</td>
+                                        <td>- 15,00 $</td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <a class="btn  dropdown-toggle hidden-arrow" href="#" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">edit</a></li>
+                                                    <li><a class="dropdown-item" href="#">update</a></li>
+                                                    <li><a class="dropdown-item" href="#">delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="income">
+                                        <td>20/05</td>
+                                        <td>Fashion</td>
+                                        <td>Card payment</td>
+                                        <td>Clothes</td>
+                                        <td>- 15,00 $</td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <a class="btn  dropdown-toggle hidden-arrow" href="#" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">edit</a></li>
+                                                    <li><a class="dropdown-item" href="#">update</a></li>
+                                                    <li><a class="dropdown-item" href="#">delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="expense">
+                                        <td>today</td>
+                                        <td>Fashion</td>
+                                        <td>Card payment</td>
+                                        <td>Clothes</td>
+                                        <td>- 15,00 $</td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <a class="btn  dropdown-toggle hidden-arrow" href="#" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">edit</a></li>
+                                                    <li><a class="dropdown-item" href="#">update</a></li>
+                                                    <li><a class="dropdown-item" href="#">delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="income">
+                                        <td>20/05</td>
+                                        <td>Fashion</td>
+                                        <td>Card payment</td>
+                                        <td>Clothes</td>
+                                        <td>- 15,00 $</td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <a class="btn  dropdown-toggle hidden-arrow" href="#" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">edit</a></li>
+                                                    <li><a class="dropdown-item" href="#">update</a></li>
+                                                    <li><a class="dropdown-item" href="#">delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="expense">
+                                        <td>today</td>
+                                        <td>Fashion</td>
+                                        <td>Card payment</td>
+                                        <td>Clothes</td>
+                                        <td>- 15,00 $</td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <a class="btn  dropdown-toggle hidden-arrow" href="#" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">edit</a></li>
+                                                    <li><a class="dropdown-item" href="#">update</a></li>
+                                                    <li><a class="dropdown-item" href="#">delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="income">
+                                        <td>20/05</td>
+                                        <td>Fashion</td>
+                                        <td>Card payment</td>
+                                        <td>Clothes</td>
+                                        <td>- 15,00 $</td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <a class="btn  dropdown-toggle hidden-arrow" href="#" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">edit</a></li>
+                                                    <li><a class="dropdown-item" href="#">update</a></li>
+                                                    <li><a class="dropdown-item" href="#">delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="income">
+                                        <td>20/05</td>
+                                        <td>Fashion</td>
+                                        <td>Card payment</td>
+                                        <td>Clothes</td>
+                                        <td>- 15,00 $</td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <a class="btn  dropdown-toggle hidden-arrow" href="#" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">edit</a></li>
+                                                    <li><a class="dropdown-item" href="#">update</a></li>
+                                                    <li><a class="dropdown-item" href="#">delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="income">
+                                        <td>20/05</td>
+                                        <td>Fashion</td>
+                                        <td>Card payment</td>
+                                        <td>Clothes</td>
+                                        <td>- 15,00 $</td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <a class="btn  dropdown-toggle hidden-arrow" href="#" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">edit</a></li>
+                                                    <li><a class="dropdown-item" href="#">update</a></li>
+                                                    <li><a class="dropdown-item" href="#">delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="btn-cont text-center mt-3">
+                            <a href="">See more <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
